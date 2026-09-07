@@ -8,28 +8,24 @@ int main() {
     scanf("%d", &n);
 
     printf("Enter the elements in the array: ");
-    for(int i = 0; i < n; i++) {
+    for(int i = 0; i < n; i++){
         scanf("%d", &arr[i]);
     }
 
-    int min;
+    for(int i = 1; i < n; i++){
+        int key = arr[i];
+        int j = i - 1;
 
-    for(int i = 0; i < n - 1; i++) {
-        min = i;
-
-        for(int j = i + 1; j < n; j++) {
-            if(arr[j] < arr[min]) {
-                min = j;
-            }
+        while(j >= 0 && arr[j] > key){
+            arr[j + 1] = arr[j];
+            j--;
         }
 
-        int temp = arr[i];
-        arr[i] = arr[min];
-        arr[min] = temp;
+        arr[j + 1] = key;
     }
 
     printf("Sorted array: ");
-    for(int i = 0; i < n; i++) {
+    for(int i = 0; i < n; i++){
         printf("%d ", arr[i]);
     }
 
