@@ -1,0 +1,8 @@
+Stacks/array_stack_palindrome.c
+Stacks/array_stack_parentheses.c
+Stacks/linked_list_infix_to_postfix.c
+Stacks/linked_list_postfix_evaluation.c
+Stacks/two_stacks_one_array.c
+Stacks/infix_to_prefix.c
+Stacks/postfix_to_infix.c
+Stacks/prefix_evaluation.c
